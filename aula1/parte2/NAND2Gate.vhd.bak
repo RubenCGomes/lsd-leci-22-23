@@ -1,0 +1,15 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity NAND2Gate is
+		port(inPort1 : in  std_logic;
+			 inPort2 : in  std_logic;
+			 outPort : out std_logic);
+end NAND2Gate;
+
+architecture Behavioural of NAND2Gate is
+begin
+
+	outPort <= not(inPort1 and inPort2);
+	
+end Behavioural;
