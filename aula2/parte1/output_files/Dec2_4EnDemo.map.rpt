@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Dec2_4EnDemo
-Fri Feb 24 09:11:32 2023
+Thu Mar  2 13:13:33 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Feb 24 09:11:32 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar  2 13:13:33 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Dec2_4EnDemo                                ;
 ; Top-level Entity Name              ; Dec2_4EnDemo                                ;
@@ -162,14 +162,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                            ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                     ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
-; Dec2_4En.vhd                     ; yes             ; User VHDL File  ; /home/rubeng/Documents/UAlinux/LSD/aula2/parte1/Dec2_4En.vhd     ;         ;
-; Dec2_4EnDemo.vhd                 ; yes             ; User VHDL File  ; /home/rubeng/Documents/UAlinux/LSD/aula2/parte1/Dec2_4EnDemo.vhd ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+; Dec2_4En.vhd                     ; yes             ; User VHDL File  ; /home/rubeng/Documents/UAlinux/LSD/lsd-leci-22-23/aula2/parte1/Dec2_4En.vhd     ;         ;
+; Dec2_4EnDemo.vhd                 ; yes             ; User VHDL File  ; /home/rubeng/Documents/UAlinux/LSD/lsd-leci-22-23/aula2/parte1/Dec2_4EnDemo.vhd ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -260,18 +260,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Feb 24 09:11:24 2023
+    Info: Processing started: Thu Mar  2 13:13:25 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Dec2_4EnDemo -c Dec2_4EnDemo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file Dec2_4En.vhd
-    Info (12022): Found design unit 1: Dec2_4En-BehavEquations File: /home/rubeng/Documents/UAlinux/LSD/aula2/parte1/Dec2_4En.vhd Line: 11
-    Info (12023): Found entity 1: Dec2_4En File: /home/rubeng/Documents/UAlinux/LSD/aula2/parte1/Dec2_4En.vhd Line: 4
+Info (12021): Found 4 design units, including 1 entities, in source file Dec2_4En.vhd
+    Info (12022): Found design unit 1: Dec2_4En-BehavEquations File: /home/rubeng/Documents/UAlinux/LSD/lsd-leci-22-23/aula2/parte1/Dec2_4En.vhd Line: 12
+    Info (12022): Found design unit 2: Dec2_4En-BehavAssign File: /home/rubeng/Documents/UAlinux/LSD/lsd-leci-22-23/aula2/parte1/Dec2_4En.vhd Line: 21
+    Info (12022): Found design unit 3: Dec2_4En-BehavProc File: /home/rubeng/Documents/UAlinux/LSD/lsd-leci-22-23/aula2/parte1/Dec2_4En.vhd Line: 31
+    Info (12023): Found entity 1: Dec2_4En File: /home/rubeng/Documents/UAlinux/LSD/lsd-leci-22-23/aula2/parte1/Dec2_4En.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file Dec2_4EnDemo.vhd
-    Info (12022): Found design unit 1: Dec2_4EnDemo-Shell File: /home/rubeng/Documents/UAlinux/LSD/aula2/parte1/Dec2_4EnDemo.vhd Line: 10
-    Info (12023): Found entity 1: Dec2_4EnDemo File: /home/rubeng/Documents/UAlinux/LSD/aula2/parte1/Dec2_4EnDemo.vhd Line: 4
+    Info (12022): Found design unit 1: Dec2_4EnDemo-Shell File: /home/rubeng/Documents/UAlinux/LSD/lsd-leci-22-23/aula2/parte1/Dec2_4EnDemo.vhd Line: 10
+    Info (12023): Found entity 1: Dec2_4EnDemo File: /home/rubeng/Documents/UAlinux/LSD/lsd-leci-22-23/aula2/parte1/Dec2_4EnDemo.vhd Line: 4
 Info (12127): Elaborating entity "Dec2_4EnDemo" for the top level hierarchy
-Info (12129): Elaborating entity "Dec2_4En" using architecture "A:behavequations" for hierarchy "Dec2_4En:system_core" File: /home/rubeng/Documents/UAlinux/LSD/aula2/parte1/Dec2_4EnDemo.vhd Line: 12
+Info (12129): Elaborating entity "Dec2_4En" using architecture "A:behavequations" for hierarchy "Dec2_4En:system_core" File: /home/rubeng/Documents/UAlinux/LSD/lsd-leci-22-23/aula2/parte1/Dec2_4EnDemo.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -280,9 +282,9 @@ Info (21057): Implemented 11 device resources after synthesis - the final resour
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 4 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 416 megabytes
-    Info: Processing ended: Fri Feb 24 09:11:32 2023
+    Info: Peak virtual memory: 415 megabytes
+    Info: Processing ended: Thu Mar  2 13:13:33 2023
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:22
 
 

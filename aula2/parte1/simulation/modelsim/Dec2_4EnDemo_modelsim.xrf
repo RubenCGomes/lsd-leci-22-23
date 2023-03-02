@@ -1,12 +1,12 @@
 vendor_name = ModelSim
-source_file = 1, /home/rubeng/Documents/UAlinux/LSD/aula2/parte1/Dec2_4En.vhd
-source_file = 1, /home/rubeng/Documents/UAlinux/LSD/aula2/parte1/Dec2_4En_1.vwf
-source_file = 1, /home/rubeng/Documents/UAlinux/LSD/aula2/parte1/Dec2_4EnDemo.vhd
+source_file = 1, /home/rubeng/Documents/UAlinux/LSD/lsd-leci-22-23/aula2/parte1/Dec2_4En.vhd
+source_file = 1, /home/rubeng/Documents/UAlinux/LSD/lsd-leci-22-23/aula2/parte1/Dec2_4En_1.vwf
+source_file = 1, /home/rubeng/Documents/UAlinux/LSD/lsd-leci-22-23/aula2/parte1/Dec2_4EnDemo.vhd
 source_file = 1, /home/rubeng/intelFPGA/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, /home/rubeng/intelFPGA/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, /home/rubeng/intelFPGA/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, /home/rubeng/intelFPGA/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, /home/rubeng/Documents/UAlinux/LSD/aula2/parte1/db/Dec2_4EnDemo.cbx.xml
+source_file = 1, /home/rubeng/Documents/UAlinux/LSD/lsd-leci-22-23/aula2/parte1/db/Dec2_4EnDemo.cbx.xml
 design_name = hard_block
 design_name = Dec2_4EnDemo
 instance = comp, \LEDG[0]~output\, LEDG[0]~output, Dec2_4EnDemo, 1

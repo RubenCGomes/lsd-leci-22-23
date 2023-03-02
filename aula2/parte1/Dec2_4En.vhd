@@ -33,7 +33,7 @@ begin
 	process(enable, inputs)
 	begin
 		if (enable = '0') then
-			outputs = "0000";
+			outputs <= "0000";
 		else
 			if (inputs = "00") then
 				outputs <= "0001";
