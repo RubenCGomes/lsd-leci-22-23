@@ -8,7 +8,7 @@ entity Mux4_1 is
 	);
 end Mux4_1;
 
-architecture BehavProc of Mux4_1 is
+/* architecture BehavProc of Mux4_1 is
 begin
 	process(sel, dataIn)
 	begin
@@ -30,12 +30,12 @@ begin
 			   dataIn(1) when sel = ("01") else
 			   dataIn(2) when sel = ("10") else
 			   dataIn(3);
-end BehavAssign;
+end BehavAssign; */
 
 architecture BehavEquations of Mux4_1 is
 begin
-	dataOut(0) <= not(sel(1)) and not(sel(0));
-	dataOut(1) <= not(sel(1)) and    (sel(0));
-	dataOut(2) <=    (sel(1)) and not(sel(0));
-	dataOut(3) <=    (sel(1)) and    (sel(0));
+	dataOut <= dataIn(0) and not(sel(1)) and not(sel(0));
+	dataOut <= dataIn(1) and not(sel(1)) and    (sel(0));
+	dataOut <= dataIn(2) and    (sel(1)) and not(sel(0));
+	dataOut <= dataIn(3) and    (sel(1)) and    (sel(0));
 end BehavEquations;
