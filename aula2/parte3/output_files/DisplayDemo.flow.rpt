@@ -1,5 +1,5 @@
 Flow report for DisplayDemo
-Sat Feb 25 23:06:29 2023
+Thu Mar  2 14:16:31 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,22 +41,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Sat Feb 25 23:06:29 2023      ;
+; Flow Status                        ; Successful - Thu Mar  2 14:16:31 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; DisplayDemo                                 ;
 ; Top-level Entity Name              ; DisplayDemoVHDL                             ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 32 / 114,480 ( < 1 % )                      ;
+;     Total combinational functions  ; 32 / 114,480 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 90 / 529 ( 17 % )                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/25/2023 23:06:22 ;
+; Start date & time ; 03/02/2023 14:16:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DisplayDemo         ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-----------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name     ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-----------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 5416811608167.167736638227479          ; --            ; --              ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 5416811608167.167776656610612          ; --            ; --              ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --              ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --              ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --              ; eda_board_design_signal_integrity ;
@@ -104,8 +104,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 409 MB              ; 00:00:23                           ;
-; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:23                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 418 MB              ; 00:00:23                           ;
+; Fitter               ; 00:00:10     ; 1.0                     ; 1135 MB             ; 00:00:15                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 350 MB              ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 529 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 599 MB              ; 00:00:00                           ;
+; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:42                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,6 +119,10 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
 +----------------------+------------------+----------------+------------+----------------+
 ; Analysis & Synthesis ; rubeng-vivobook  ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
+; Fitter               ; rubeng-vivobook  ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
+; Assembler            ; rubeng-vivobook  ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
+; Timing Analyzer      ; rubeng-vivobook  ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
+; EDA Netlist Writer   ; rubeng-vivobook  ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
 +----------------------+------------------+----------------+------------+----------------+
 
 
@@ -122,6 +130,10 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off DisplayDemo -c DisplayDemo
+quartus_fit --read_settings_files=off --write_settings_files=off DisplayDemo -c DisplayDemo
+quartus_asm --read_settings_files=off --write_settings_files=off DisplayDemo -c DisplayDemo
+quartus_sta DisplayDemo -c DisplayDemo
+quartus_eda --read_settings_files=off --write_settings_files=off DisplayDemo -c DisplayDemo
 
 
 

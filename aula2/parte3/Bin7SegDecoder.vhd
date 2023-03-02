@@ -12,7 +12,7 @@ end Bin7SegDecoder;
 
 architecture Behavioural of Bin7SegDecoder is
 begin
-	decOut_n <= "1000000" when (enable = '1')      else ---> 0
+	decOut_n <= "1000000" when (enable = '0')      else ---> 0
 				"1111001" when (binInput = "0001") else ---> 1
 				"0100100" when (binInput = "0010") else ---> 1
 				"0100100" when (binInput = "0010") else ---> 2
