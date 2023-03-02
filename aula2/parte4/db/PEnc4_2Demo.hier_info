@@ -9,14 +9,17 @@ LEDR[1] <= PEnc4_2:inst.encodedOut[1]
 
 
 |PEnc4_2Demo|PEnc4_2:inst
-dencodedIn[0] => ~NO_FANOUT~
+dencodedIn[0] => validOut.DATAA
 dencodedIn[1] => encodedOut.DATAA
+dencodedIn[1] => validOut.OUTPUTSELECT
 dencodedIn[2] => encodedOut.OUTPUTSELECT
 dencodedIn[2] => encodedOut.DATAA
+dencodedIn[2] => validOut.OUTPUTSELECT
 dencodedIn[3] => encodedOut.OUTPUTSELECT
 dencodedIn[3] => encodedOut.OUTPUTSELECT
+dencodedIn[3] => validOut.OUTPUTSELECT
 encodedOut[0] <= encodedOut.DB_MAX_OUTPUT_PORT_TYPE
 encodedOut[1] <= encodedOut.DB_MAX_OUTPUT_PORT_TYPE
-validOut <= <VCC>
+validOut <= validOut.DB_MAX_OUTPUT_PORT_TYPE
 
 

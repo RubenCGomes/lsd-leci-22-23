@@ -22,7 +22,7 @@ begin
         elsif (dencodedIn(0) = '1') then
             encodedOut <= "00";
         else
-            validOut <= '1';
+            validOut <= '0';
 			encodedOut <= "XX";
         end if;
     end process;
