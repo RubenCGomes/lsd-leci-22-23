@@ -13,7 +13,7 @@ architecture Behavioral of FreqDivider is
 	signal s_counter : unsigned(31 downto 0);
 	signal s_halfWay : unsigned(31 downto 0);
 begin
-	s_halfWay <= (unsigned(k) / 2);
+	s_halfWay <= unsigned(k);
 	
 	process(clkIn)
 	begin
