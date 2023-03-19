@@ -1,4 +1,4 @@
-/*se tiver tempo, apagar o enable e testar sem enable!*/
+--se tiver tempo, apagar o enable e testar sem enable!
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
@@ -28,5 +28,5 @@ begin
 				"0100001" when (binInput = "1101") else ---> D
 				"0000110" when (binInput = "1110") else ---> E
 				"0001110" when (binInput = "1111") else ---> F
-				"1000000"                               ---> 0
+				"1000000";                              ---> 0
 end Behavioural;
