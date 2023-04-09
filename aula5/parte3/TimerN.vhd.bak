@@ -1,0 +1,20 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity TimerN is
+	generic (N : positive := 1);
+	port (start  	: in  std_logic;
+		  reset  	: in  std_logic;
+		  clk    	: in  std_logic;
+		  enable	: in  std_logic;
+		  timeroOut : out std_logic_vector(31 downto 0)
+	);
+end TimerN;
+
+architecture Behavioral of TimerN is
+begin
+	process(clk)
+	begin
+		if ()
+end Behavioral;
