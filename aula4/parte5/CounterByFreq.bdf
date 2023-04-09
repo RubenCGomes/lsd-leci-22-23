@@ -24,7 +24,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect 32 176 200 192)
 	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "CLOCK_50" (rect 5 0 63 11)(font "Arial" ))
+	(text "CLOCK_50" (rect 5 0 62 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -40,7 +40,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect 376 192 544 208)
 	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "SW[0]" (rect 5 0 39 13)(font "Intel Clear" ))
+	(text "SW[0]" (rect 5 0 38 13)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -56,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect 376 208 544 224)
 	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "SW[1]" (rect 5 0 39 13)(font "Intel Clear" ))
+	(text "SW[1]" (rect 5 0 38 13)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -82,35 +82,6 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 78 4)(pt 82 8))
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
-	)
-)
-(symbol
-	(rect 840 136 1048 216)
-	(text "Bin7SegDecoder" (rect 5 0 91 11)(font "Arial" ))
-	(text "inst" (rect 8 64 26 75)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "enable" (rect 0 0 34 11)(font "Arial" ))
-		(text "enable" (rect 21 27 55 38)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "binInput[3..0]" (rect 0 0 63 11)(font "Arial" ))
-		(text "binInput[3..0]" (rect 21 43 84 54)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 208 32)
-		(output)
-		(text "decOut_n[6..0]" (rect 0 0 73 11)(font "Arial" ))
-		(text "decOut_n[6..0]" (rect 126 27 199 38)(font "Arial" ))
-		(line (pt 208 32)(pt 192 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 192 64))
 	)
 )
 (symbol
@@ -184,6 +155,35 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(drawing
 		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 840 136 1048 216)
+	(text "Bin7SegDecoder" (rect 5 0 91 11)(font "Arial" ))
+	(text "inst2" (rect 8 64 32 75)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "enable" (rect 0 0 34 11)(font "Arial" ))
+		(text "enable" (rect 21 27 55 38)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "binInput[3..0]" (rect 0 0 63 11)(font "Arial" ))
+		(text "binInput[3..0]" (rect 21 43 84 54)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "decOut_n[6..0]" (rect 0 0 73 11)(font "Arial" ))
+		(text "decOut_n[6..0]" (rect 126 27 199 38)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 64))
 	)
 )
 (connector
